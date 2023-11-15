@@ -4,3 +4,9 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin grid() {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  gap: 24px;
+}

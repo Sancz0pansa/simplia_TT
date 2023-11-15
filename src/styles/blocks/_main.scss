@@ -1,0 +1,422 @@
+a:-webkit-any-link {
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    min-height: 80vh;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__sentence {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      object-fit: contain;
+      background-size: 100% 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-image: url(https://www.simpliareps.com/playground_assets/slider-image-landscape-1500w.jpg);
+    }
+
+    &__resources {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(255, 252, 238);
+      padding-bottom: 60px;
+
+      & h3 {
+        color: rgb(255, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31px;
+        margin-top: 50px;
+        margin-bottom: 0;
+      }
+
+      & h2 {
+        line-height: 56px;
+        font-size: 38px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__read {
+      margin-top: 100px;
+    }
+
+    &__video {
+      margin-top: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      & h3 {
+        color: red;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      & h2 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .article {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__video {
+      width: 100%;
+      height: auto;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+
+      &-player {
+        object-fit: cover;
+      }
+
+      &-container {
+        width: 498px;
+        height: 292px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & p {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__read {
+      display: flex;
+      width: 1136px;
+      justify-content: space-between;
+      margin-top: 34px;
+      & img {
+        width: 372.13px;
+        height: 350px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      &-text {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        & h2 {
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+
+        & p {
+          font-size: 16px;
+          font-weight: 500;
+          margin-top: 0;
+        }
+
+        & a {
+          color: blue;
+          font-size: 14px;
+          font-weight: 700;
+
+          &.middle {
+            margin-top: 50px;
+          }
+        }
+      }
+
+    }
+
+    &__h1 {
+      height: 104px;
+      font-family: "Poppins", sans-serif;
+      margin-top: 104px;
+      font-size: 48px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 52px;
+      margin-bottom: 0;
+
+      &-red {
+        color: red;
+      }
+
+      &-small {
+        font-size: 12px;
+      }
+    }
+    &__buttons {
+      text-align: center;
+      &-big {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+      }
+
+      &-small {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        height: 38px;
+        width: 100%;
+      }
+    }
+
+    &__button-big {
+      text-align: center;
+      margin-top: 50px;
+      display: block;
+      color: white !important;
+      background-color: rgb(248, 0, 2);
+      border: 1px solid rgb(248, 0, 2);
+      width: 241px;
+      height: 58px;
+      border-radius: 4px;
+
+      line-height: 60px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: rgb(248, 0, 2) !important;
+        background-color: white;
+      }
+      &-cards {
+        cursor: pointer;
+        // border: 2px solid black;
+        border: none;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        width: 171px;
+        display: block;
+        color: white !important;
+        background-color: rgb(248, 0, 2);
+        margin-right: 350px;
+        margin-left: 350px;
+        border-radius: 4px;
+        font-size: 20px;
+        line-height: 23px;
+        height: 56px;
+      }
+
+    }
+
+    &__button-small {
+      text-align: center;
+      display: block;
+      height: 38px;
+      width: 143px;
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: white;
+      border: 1px solid rgb(248, 0, 2);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: white;
+        background-color: rgb(248, 0, 2);
+      }
+    }
+
+    &__cards {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      width: 80%;
+      flex-wrap: wrap;
+      &-column {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+    }
+    &__card {
+      display: flex;
+      background-color: white;
+      width: 518px;
+      height: 120px;
+      box-sizing: border-box;
+      padding: 20px;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid rgb(224, 224, 224);
+      position: relative;
+      & img {
+        size: auto;
+      }
+
+      &:hover {
+        border: 1px solid red;
+        cursor: pointer;
+      }
+
+      &-left {
+        display: flex;
+        background-color: white;
+        width: 518px;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        border: 1px solid rgb(224, 224, 224);
+        position: relative;
+        & img {
+          margin-right: 10px;
+          position: absolute;
+          left: 1px;
+          size: auto;
+
+        }
+
+        &:hover {
+          box-shadow: inset 0 0 0 1px red;
+          // padding-top: 19px;
+          padding-bottom: 19px;
+          cursor: pointer;
+
+          img {
+            left: 2px;
+          }
+        }
+      }
+
+      &-soon {
+        display: flex;
+        background-color: white;
+        width: 518px;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgb(224, 224, 224);
+        position: relative;
+      }
+
+      &-text {
+        width: 80%;
+
+        &-big {
+          width: 83%;
+          & h4 {
+            color: red;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          & p {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+          }
+        }
+
+        & h4 {
+          color: red;
+          font-size: 22px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        & p {
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+
+      &-bubble {
+        position: absolute;
+        left: -20px;
+        width: 80px;
+        height: 70px;
+        background-color: white;
+        border-radius: 50% 50% 50% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        &-right {
+          border-radius: 50% 50% 0;
+          position: absolute;
+          left: -20px;
+          width: 80px;
+          height: 70px;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: red;
+          font-size: 13px;
+          font-weight: bold;
+          text-align: center;
+          cursor: pointer;
+          margin-bottom: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        &-container {
+          position: relative;
+          height: 150px;
+        }
+      }
+
+      &-big {
+        display: flex;
+        background-color: white;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgb(224, 224, 224);
+        position: relative;
+        width: 685px;
+        &:hover {
+          border: 1px solid red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,11 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "./blocks/header";
+@import "./blocks/main";
 
 body {
-  background: $c-gray;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+
 }

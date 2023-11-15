@@ -8,9 +8,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      function toggleMenu() {
+      const Menu = document.getElementById('menu');
+      const closeMenu = document.getElementById('closeButton');
+      const openMenu = document.getElementById('openButton');
+      Menu.classList.toggle('show');
+      closeMenu.classList.toggle('show');
+      openMenu.classList.toggle('hide');
+      }
+
+      function toggleMenuHover() {
+      const Menu = document.getElementById('floating__menu');
+      Menu.classList.toggle('show');
+
+      }
+    </script>
   </head>
   <body>
-    <div class="white-space"></div>
+    <div class="floating" onmouseenter="toggleMenuHover()"
+    onmouseleave="toggleMenuHover()">
+      <img alt="help" src="./images/customer-support.png"
+      width="35px" height="40px">
+      <div id="floating__menu" class="floating__menu">
+        <ul>
+          <li>Email Us</li>
+          <li>Schedule Us</li>
+          <li>Message Us</li>
+          <li>Page Us</li>
+          <li>Call Us</li>
+          <li>Meet Us</li>
+          <li>Meet Now</li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu">
+      <button class="menu__button" onclick="toggleMenu()">
+
+        <img id="openButton" class="burger"
+        alt="menu"
+        src="./images/menu.png"
+        width="16px" height="14px">
+        <img id="closeButton" class="close"
+        alt="menu"
+        src="./images/close.png"
+        width="16px" height="14px">
+
+      </button>
+      <div id="menu" class="menu__list">
+        <ul>
+          <li>Home Menu</li>
+          <li>Login/Signup</li>
+          <li>Window Mode</li>
+          <li>Home Menu</li>
+        </ul>
+      </div>
+    </div>
     <header class="header">
       <nav class="header__nav">
         <img alt="logo" src="https://www.simpliareps.com/playground_assets/logo-simplia-reps.svg"
@@ -281,6 +334,149 @@
 
         </div>
       </section>
+
+      <section class="section">
+        <div class="section__blogs">
+          <h3>Blogs</h3>
+          <article class="article">
+            <div class="article__blogs">
+              <div class="article__blogs-col">
+                <img src="https://debianlargeserver-0050-simpliasites.laxroute53.com/JayNodeDhtmlxApp/SimpliaReps/Images/bg1.png" alt="img"
+                width="250px" height="200px">
+                <a href="#" class="title">Customer Website<br> Experience </a>
+                <a href="#">Read more &gt;&gt;</a>
+              </div>
+              <div class="article__blogs-col">
+                <img src="https://www.simpliareps.com/JayNodeDhtmlxApp/SimpliaReps/Images/SEO.png" alt="img"
+                width="250px" height="200px">
+                <a href="#" class="title">Why SEO Marketing? </a>
+                <a href="#">Read more &gt;&gt;</a>
+              </div>
+              <div class="article__blogs-col">
+                <img src="https://www.simpliareps.com/JayNodeDhtmlxApp/SimpliaReps/Images/bg3.png" alt="img"
+                width="250px" height="200px">
+                <a href="#" class="title">AI Integrated Website</a>
+                <a href="#">Read more &gt;&gt;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__join">
+          <article class="article">
+            <div class="article__join">
+              <div class="article__join-text">
+                <h3>Join Us</h3>
+                <h2>Become a Reps Agent</h2>
+                <p>
+                  We are dedicated to helping sales agents like you earn more
+                  money and succeed in your career. Our team of experts provides
+                  the resources and support you need to reach your full potential.
+                  Whether you're just starting out or have been in sales for
+                  years, we have something for you.
+                </p>
+              </div>
+              <img id="rep-agent-img" alt="website2537"
+              src="https://www.simpliareps.com/playground_assets/website2537-kvbl-1100w.png"
+              width="537px" height="320px">
+              <h4>Take the first step towards success and join us today!</h4>
+              <form class="article__join-form">
+                <div class="article__join-form-col">
+                  <input class="text" type="text"
+                  placeholder="First Name">
+                  <input class="text" type="text"
+                  placeholder="Email Address">
+                </div>
+                <div class="article__join-form-col">
+                  <input class="text" type="text"
+                  placeholder="Last Name">
+                  <input class="text" type="text"
+                  placeholder="Mobile Number">
+                </div>
+                <input class="article__join-form-button" type="submit"
+                value="Submit">
+              </form>
+            </div>
+
+
+          </article>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <img src="https://simplia.com/images/white-simplie-logo.webp" alt="Simplia"
+        width="156px" height="60px">
+        <address class="footer__container-col">
+          <h2>Contact Us</h2>
+          <p class="sep">10801 National Blvd. Suite 500<br>
+            Los Angeles California, 90064
+          </p>
+          <p>
+            <svg width="18" height="18"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="#ffffff" d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z">
+            </path>
+            </svg>
+            Phone: +1-866-806-4111
+          </p>
+          <p>
+            <svg version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"  x="0px"
+            y="0px" width="18"
+            height="18" viewBox="0 0 122.88 78.607"
+            enable-background="new 0 0 122.88 78.607"
+>
+              <g>
+                <path fill="#ffffff" fill-rule="evenodd"
+                clip-rule="evenodd" d="M61.058,65.992l24.224-24.221l36.837,36.836H73.673h-25.23H0l36.836-36.836 L61.058,65.992L61.058,65.992z M1.401,0l59.656,59.654L120.714,0H1.401L1.401,0z M0,69.673l31.625-31.628L0,6.42V69.673L0,69.673z M122.88,72.698L88.227,38.045L122.88,3.393V72.698L122.88,72.698z"></path>
+              </g>
+            </svg>
+            info@simplia.com
+          </p>
+        </address>
+        <div class="footer__container-col">
+          <h2>Simplia</h2>
+          <ul>
+            <li>About Us</li>
+            <li>Our Way</li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="footer__container-col">
+          <h2>Business</h2>
+          <ul>
+            <li>Our Services</li>
+            <li>Our Showcase</li>
+          </ul>
+        </div>
+
+        <div class="footer__container-col">
+          <h2>Personal</h2>
+          <ul>
+            <li>Coming Soon</li>
+          </ul>
+        </div>
+
+        <div class="footer__container-col">
+          <h2>Marketplace</h2>
+          <ul>
+            <li>Coming Soon</li>
+          </ul>
+        </div>
+
+        <div class="footer__container-col">
+          <h2>Access</h2>
+          <ul>
+            <li>Sign in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">Copyright © 2023 Simplia, Inc.</div>
+    </footer>
   </body>
 </html>

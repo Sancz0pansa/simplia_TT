@@ -1,13 +1,80 @@
-.white-space {
+.menu {
   height: 32px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  &__button {
+    padding: 0.25rem 1rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    & img {
+      &.hide {
+        display: none;
+      }
+      &.close {
+        display: none;
+
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+
+    &.show {
+      display: block;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      padding-right: 30px;
+      & li {
+        &:first-child {
+          margin-top: 0;
+        }
+        margin-top: 5px;
+        position: relative;
+        text-align: right;
+        &::before {
+          content: "\2022";
+          color: #000;
+          font-size: 1.5em;
+          position: absolute;
+          left: 4.5em;
+          top: 50%;
+          transform: translateY(-50%);
+          display: inline-block;
+          width: 1em;
+          text-align: right;
+          padding-right: 0.5em;
+        }
+      }
+    }
+  }
 }
 
 .header {
-  @include grid();
   margin-bottom: 29px;
-
+  margin-top: 30px;
   &__nav {
-    grid-column: 1 / 13;
     display: flex;
     justify-content: space-between;
 
@@ -32,7 +99,7 @@
       }
       &-link {
         text-decoration: none;
-        color: black;
+        color: black !important;
       }
       &-text-grey {
         color: grey;
